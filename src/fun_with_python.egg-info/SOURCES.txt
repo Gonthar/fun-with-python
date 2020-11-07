@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/fun_with_python/__init__.py
+src/fun_with_python/console.py
+src/fun_with_python.egg-info/PKG-INFO
+src/fun_with_python.egg-info/SOURCES.txt
+src/fun_with_python.egg-info/dependency_links.txt
+src/fun_with_python.egg-info/entry_points.txt
+src/fun_with_python.egg-info/requires.txt
+src/fun_with_python.egg-info/top_level.txt

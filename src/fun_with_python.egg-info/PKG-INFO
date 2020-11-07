@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: fun-with-python
+Version: 0.1.0
+Summary: The hypermodern Python project as proposed by https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
+Home-page: https://github.com/gonthar/fun-with-python
+Author: Maciej Gontar
+Author-email: maciej.gontar@gmail.com
+License: UNKNOWN
+Description: # fun-with-python
+Platform: UNKNOWN
+Requires-Python: >=3.7,<4.0

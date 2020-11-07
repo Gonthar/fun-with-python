@@ -1,0 +1,3 @@
+[console_scripts]
+fun-with-python = fun_with_python.console:main
+
