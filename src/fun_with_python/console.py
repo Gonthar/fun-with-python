@@ -16,12 +16,16 @@ API_URL = "https://%s.wikipedia.org/api/rest_v1/page/random/summary"
 @click.version_option(version=__version__)
 def main(language):
     """The hypermodern Python project."""
-    with requests.get(API_URL % language) as response:
-        response.raise_for_status()
-        data = response.json()
+    try:
+        with requests.get(API_URL % language) as response:
+            response.raise_for_status()
+            data = response.json()
 
-    title = data["title"]
-    extract = data["extract"]
+        title = data["title"]
+        extract = data["extract"]
 
-    click.secho(title, fg="magenta")
-    click.echo(textwrap.fill(extract))
+        click.secho(title, fg="cyan")
+        click.echo(textwrap.fill(extract))
+    except Exception:
+        click.echo("Sorry, we weren't able to connect to Wikipedia. Maybe your internet is down?")
+        
